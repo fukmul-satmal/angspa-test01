@@ -369,13 +369,20 @@
   </div>
 
 
+
   <!-- Login or Logout -->
   <h2>Login or Logout</h2>
   <app-auth-button></app-auth-button>
 
+
   <!-- User Profile -->
   <h2>User Profile</h2>
-  <app-user-profile></app-user-profile>
+  <li>
+      <a routerLink="/user-profile">ユーザプロファイル</a>
+  </li>
+  <!-- コンテンツの埋め込み先-->
+  <router-outlet></router-outlet>
+
 
 
   <!-- Next Steps -->

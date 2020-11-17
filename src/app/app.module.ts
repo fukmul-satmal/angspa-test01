@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthModule } from '@auth0/auth0-angular';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AuthButtonComponent } from './auth-button/auth-button.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, UserProfileComponent, AuthButtonComponent],
@@ -18,6 +19,8 @@ import { AuthButtonComponent } from './auth-button/auth-button.component';
       clientId: 'f2TFdb7QID12XZUwNW6mRO9AjdAEnFen',
       redirectUri: `https://fukmul-satmal.github.io/angspa-test01/`
     }),
+
+    AppRoutingModule,
   ],
 
   bootstrap: [AppComponent],
