@@ -16,7 +16,7 @@ import { AuthButtonComponent } from './auth-button/auth-button.component';
     AuthModule.forRoot({
       domain: 'fukmul-satmal-02.auth0.com',
       clientId: 'f2TFdb7QID12XZUwNW6mRO9AjdAEnFen',
-      redirectUri: `${window.location.href}`
+      redirectUri: `https://fukmul-satmal.github.io/angspa-test01/`
     }),
   ],
 
