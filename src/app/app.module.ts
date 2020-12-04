@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+// add
 import { HttpClientModule } from '@angular/common/http';
 
 // Interceptor
@@ -20,6 +21,7 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
   declarations: [AppComponent, UserProfileComponent, AuthButtonComponent, ExternalApiComponent],
   imports: [
     BrowserModule,
+    // add
     HttpClientModule,
 
     // Import the module into the application, with configuration
