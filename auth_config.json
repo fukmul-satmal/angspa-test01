@@ -1,5 +1,6 @@
 {
   "domain": "fukmul-satmal-02.auth0.com",
   "clientId": "f2TFdb7QID12XZUwNW6mRO9AjdAEnFen",
+  "audience": "https://fukmul-satmal.github.io/test",
   "serverUrl": "https://expressapi-test.herokuapp.com"
 }
