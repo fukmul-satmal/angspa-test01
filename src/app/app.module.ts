@@ -22,11 +22,12 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
 
     // Import the module into the application, with configuration
     AuthModule.forRoot({
-      domain: 'fukmul-satmal-02.auth0.com',
-      clientId: 'f2TFdb7QID12XZUwNW6mRO9AjdAEnFen',
-      redirectUri: `https://fukmul-satmal.github.io/angspa-test01/`,
+//      domain: 'fukmul-satmal-02.auth0.com',
+//      clientId: 'f2TFdb7QID12XZUwNW6mRO9AjdAEnFen',
+//      redirectUri: `https://fukmul-satmal.github.io/angspa-test01/`,
 
       //アクセストークンをアタッチするInterceptorのURL設定
+      ...env.auth,
       httpInterceptor: {
         allowedList: [`${env.dev.serverUrl}/api/messages/protected-message`],
       },
