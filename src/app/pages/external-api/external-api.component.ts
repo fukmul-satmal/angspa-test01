@@ -40,6 +40,9 @@ export class ExternalApiComponent implements OnInit {
                 this.message = result.message;
             });
         }
+    })
+    .catch((e) => {
+        console.error(e);
     });
   }
 }
