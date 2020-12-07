@@ -30,12 +30,16 @@ export class ExternalApiComponent implements OnInit {
 
   callSecureApi(): void {
     // routeLinkの代わりに、'external-api'のroutingを呼び出す
-    this.router.navigateByUrl('/external-api');
-
-    this.http
-      .get(`${env.dev.serverUrl}/api/messages/protected-message`)
-      .subscribe((result: Message) => {
-        this.message = result.message;
-      });
+    this.router.navigateByUrl('/external-api')
+    .then((result) => {
+        if (result) {
+            // ログインしていればAPI呼び出し
+            this.http
+              .get(`${env.dev.serverUrl}/api/messages/protected-message`)
+              .subscribe((result: Message) => {
+                this.message = result.message;
+            });
+        }
+    });
   }
 }
