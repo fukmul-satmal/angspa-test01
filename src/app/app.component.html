@@ -398,8 +398,7 @@
   <li>
       <a [routerLink]="[{ outlets: { UserProfile: ['user-profile'] } }]">ユーザプロファイル</a>
   </li>
-  <router-outlet></router-outlet>
-  <app-user-profile></app-user-profile>
+  <router-outlet name='UserProfile'></router-outlet>
 
   <!-- API Call -->
   <h2>Call API</h2>
