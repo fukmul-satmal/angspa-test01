@@ -380,14 +380,19 @@
 
 <!--
   <app-user-profile></app-user-profile>
--->
 
   <li>
-      <a routerLink="user-profile">ユーザプロファイル</a>
+      <a routerLink="/user-profile">ユーザプロファイル</a>
   </li>
+-->
   <!-- コンテンツの埋め込み先 -->
   <!-- (nameでユーザプロファイルのコンテンツのみを指定し、APIのコンテンツは出力させない) -->
+<!--
   <router-outlet name='UserProfile'></router-outlet>
+-->
+  <li>
+      <a [routerLink]="[{ outlets: { UserProfile: ['/user-profile'] } }]">ユーザプロファイル</a>
+  </li>
 
   <!-- API Call -->
   <h2>Call API</h2>
