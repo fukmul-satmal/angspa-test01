@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 // add
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 
 // Interceptor
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
